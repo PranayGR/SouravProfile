@@ -3,8 +3,8 @@ const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 let particleArray = [];
-let adjustX = 8;
-let adjustY = 11;
+let adjustX = 5;
+let adjustY = 30;
 
 // Handle Mouse
 const mouse = {
@@ -20,10 +20,10 @@ window.addEventListener('mousemove', function(event){
 });
 
 ctx.fillStyle = 'white';
-ctx.font = '16px Verdana Black';
+ctx.font = '1em Verdana Black';
 ctx.fillText('SOURAV', 0, 30);
 
-const textCoordinates = ctx.getImageData(0, 0, 100, 100);
+const textCoordinates = ctx.getImageData(0, 10, 100, 100);
 
 
 class Particle {

@@ -37,8 +37,8 @@ svg{
 
 svg:hover{
     transition: 0s;
-    color: #0f0;
-    fill: #0f0;
+    color: rgba(0, 255, 0,0.6);
+    fill: rgba(0, 255, 0,0.6);
     /* text-shadow: 0 0 120px #0f0; */
     /* filter: drop-shadow(0px 0 120px #0f0); */
 }
@@ -102,8 +102,8 @@ svg:hover{
     z-index: 2;
     position: absolute;
     color: #fff;
-    left: 5%;
-    top:20%;
+    left: 4%;
+    top:25%;
     font-size: 30px;
     user-select: none;
     pointer-events: none;
@@ -115,4 +115,34 @@ canvas{
     left: 0;
     z-index: 2;
     pointer-events: none;
+    font-size: 20px;
+}
+
+
+.name-small{
+    display: none;
+    font-size: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+    .introSection{
+        top:30%;
+    }
+    canvas{
+        font-size: 15px;
+    }
+    /* .name-small{
+        display: inline;
+    } */
+    
+}
+
+@media screen and (max-width: 768px) {
+    canvas{
+        display:none;
+    }
+    .name-small{
+        display: inline;
+    }
+    
 }
