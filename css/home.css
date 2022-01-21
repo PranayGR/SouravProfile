@@ -142,8 +142,20 @@ canvas{
     canvas{
         display:none;
     }
+    .introSection{
+        font-size: 20px;
+    }
     .name-small{
         display: inline;
     }
     
+}
+
+@media screen and (max-width: 500px) {
+    .introSection{
+        font-size: 10px;
+    }
+    .name-small{
+        font-size: 60px;
+    }
 }
