@@ -16,7 +16,7 @@ const mouse = {
 window.addEventListener('mousemove', function(event){
     mouse.x = event.x;
     mouse.y = event.y;
-    console.log(mouse.x,mouse.y);
+    // console.log(mouse.x,mouse.y);
 });
 
 ctx.fillStyle = 'white';
@@ -82,7 +82,7 @@ function init() {
 }
 
 init();
-console.log(particleArray);
+// console.log(particleArray);
 
 function animate(){
     ctx.clearRect(0, 0,canvas.width, canvas.height);

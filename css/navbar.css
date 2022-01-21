@@ -17,7 +17,7 @@ body{
 .navbar{
     list-style: none;
     z-index: 10;
-    background-color: #1a1a1a;
+    background-color: rgb(26, 26, 26);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,4 +52,62 @@ body{
 .navLinks:hover{
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
+}
+
+.fa-bars{
+    width: 35px;
+    color: #fff;
+    display: none;
+    margin-left:auto;
+    z-index: 10;
+    margin-top: 2%;
+    margin-right: 2%;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar{
+        display: none;
+        background-color: transparent;
+    }
+    .fa-bars{
+        display: block;
+    }
+    .navLinks{
+        display:block;
+        margin: 10% auto;
+    }
+    .navLinks a{
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: bold;
+        opacity: 1;
+    }
+}
+
+.navbarOffCanvas{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0;
+    width: 100vw;
+    overflow-y:hidden;
+    background-color: rgba(26, 26, 26,0.9);
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.6s ease-in-out;
+}
+
+.offCanvasLinks{
+    list-style: none;
+}
+
+.closeBtn{
+    position: absolute;
+    color: #fff;
+    font-size: 50px;
+    margin-right: 2%;
+    right: 0;
+    top: 0;
 }
