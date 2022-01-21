@@ -56,13 +56,19 @@ body{
 
 .fa-bars{
     width: 35px;
-    color: #fff;
+    color: #fff !important;
     display: none;
     margin-left:auto;
+    opacity: 0.6;
     z-index: 10;
     margin-top: 2%;
     margin-right: 2%;
 }
+
+.fa-bars:hover{
+    opacity: 1;
+}
+
 
 @media screen and (max-width: 768px) {
     .navbar{
