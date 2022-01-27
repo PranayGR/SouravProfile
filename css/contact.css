@@ -1,0 +1,87 @@
+.blob{
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.formContainer{
+    width: 90%;
+    max-width: 800px;
+    padding: 5%;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-right: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(25px);
+    margin: 5% 5%;
+    /* position: absolute;
+    top: 50%;
+    transform: translate(0, -50%); */
+}
+
+.formContainer h1{
+    color: #fff;
+}
+
+.formContainer form{
+    display:flex;
+    flex-direction: column;
+}
+
+.formContainer form input{
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 20px;
+    box-shadow:none;
+    border: none;
+    outline: none;
+}
+
+.formContainer form textarea{
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 20px;
+    box-shadow:none;
+    border: none;
+    outline: none;
+    max-width: 100%;
+    height: 200px;
+}
+
+.formContainer form button{
+    width: 100px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: rgba(255, 0, 0, 0.20);
+    box-shadow:none;
+    border: none;
+    outline: none;
+    color: #fff;
+    transition: 0.3s
+}
+
+.formContainer form button:hover{
+    background-color: rgba(255, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px){
+    .blob{
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .blob{
+        width: 100%;
+        height: 100%;
+        top: 70%;
+    }
+}
