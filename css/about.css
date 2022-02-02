@@ -5,6 +5,12 @@
     margin-block: 50px;
 }
 
+.aboutHeading{
+    font-size: 45px;
+    color: #ddd;
+    text-align: center;
+}
+
 .imgContainer{
     float: left;
     width: 100px;
@@ -106,6 +112,7 @@
     background-color: #fff;
     margin-top: -50px;
     position: relative;
+    color: #fff;
 }
 
 .expCard:nth-child(even)::before{
@@ -162,4 +169,24 @@
 
 .expCard:nth-child(even){
     margin-left: auto;
+}
+
+.expCard:nth-child(1), .expCard:nth-child(1)::before{
+    background-color: #ff4f4f;
+}
+
+.expCard:nth-child(2), .expCard:nth-child(2)::before{
+    background-color: #ffb84f;
+}
+
+.expCard:nth-child(3), .expCard:nth-child(3)::before{
+    background-color: #3dca5c;
+}
+
+.expCard:nth-child(4), .expCard:nth-child(4)::before{
+    background-color: #565252;
+}
+
+.expCard:nth-child(5), .expCard:nth-child(5)::before{
+    background-color: #4fa0ff;
 }
