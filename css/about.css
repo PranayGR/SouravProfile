@@ -163,7 +163,14 @@
     right: -10%;
 }
 
-.expCard span{
+.expCard .companyName{
+    font-size: 20px;
+    display: block;
+    color: #eee;
+    font-weight: bold;
+}
+
+.expCard .expYear{
     font-size: 24px;
 }
 
